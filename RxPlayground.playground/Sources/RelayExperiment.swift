@@ -28,7 +28,8 @@ public class BehaviorRelayExperiment: Executer {
         
         // emit
         behaviourRelay.accept(3)
-        behaviourRelay.accept(4)
+        
+        llog("🚦BehaviourRelay value: \(behaviourRelay.value)")
     }
 }
 
@@ -59,5 +60,6 @@ public class PublishRelayExperiment: Executer {
         publishRelay.accept("3")
         publishRelay.accept("4")
     
+//        llog("🚦 \(publishRelay.value)") ❌ cannot get value
     }
 }
